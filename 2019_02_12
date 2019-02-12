@@ -1,0 +1,17 @@
+Project day 2 : PORTFOLIO.
+
+###MORNING
+This morning I did a sketch of the portfolio I want to build.
+I put all the ideas about the contain and the disposition of all content.
+You can see it in the picture named "morningSketch1" and "morningSketch2".
+In "morningSketch1" you can see on the right side a hamburger button, once we click on it, this icon changes to be a cross icon, and at the same time
+directs us to the content of the page.
+In the middle there is a the sentence "welcome to my portfolio" which make a rotation.(I'll try to do it)
+"morningSketch2" is the content of the page. As you can see, there is a horizontal navbar, but I'll do it vertically.
+The letters from A to G are referred to each link in the navbar : ABOUT ME(a), SKILLS(b) etc...
+Each page will have his own background and of course his own content.
+
+
+###AFTERNOON
+This afternoon I begin with the navbar. I just tried to make it vertically, clickable and fixed.
+Concerning the links, I created a page for each link with different backgrounds, just to see how it will be.
