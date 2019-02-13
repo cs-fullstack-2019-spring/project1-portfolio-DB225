@@ -8,11 +8,13 @@ body
 h1{
     text-align: center;
 }
+
+/*The picture style*/
 img{
     position: relative;
     left: 44%;
     border-radius: 120px;
-    border: 1px solid black;
+    border: 5px double black;
 }
 
 
@@ -62,7 +64,7 @@ a:hover
 }
 
 
-/* The hamburger in his initial statement*/
+ /*The hamburger in his initial statement*/
 #menuToggle span
 {
     display: block;
@@ -79,41 +81,41 @@ a:hover
     opacity 0.55s ease;
 }
 
-/*!*the position of the first bar of the crossmark*!*/
-/*#menuToggle span:first-child*/
-/*{*/
-    /*transform-origin: 0% 0%;*/
-/*}*/
+/*the position of the first bar of the crossmark*/
+#menuToggle span:first-child
+{
+    transform-origin: 0% 0%;
+}
 
-/*!*the position of the second bar of the crossmark*!*/
-/*#menuToggle span:nth-last-child(2)*/
-/*{*/
-    /*transform-origin: 0% 100%;*/
-/*}*/
-
-
-/*!* Transform all the slices of hamburger into a crossmark.*!*/
-/*#menuToggle input:checked ~ span*/
-/*{*/
-    /*opacity: 1;*/
-    /*transform: rotate(45deg) translate(-2px, -1px);*/
-    /*background: white;*/
-/*}*/
+/*the position of the second bar of the crossmark*/
+#menuToggle span:nth-last-child(2)
+{
+    transform-origin: 0% 100%;
+}
 
 
-/*!* The second bar of the hamburger is hidden.*!*/
-/*#menuToggle input:checked ~ span:nth-last-child(3)*/
-/*{*/
-    /*opacity: 0;*/
-    /*transform: rotate(0deg) scale(0.2, 0.2);*/
-/*}*/
+/* Transform all the slices of hamburger into a crossmark.*/
+#menuToggle input:checked ~ span
+{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+}
 
 
-/*!* The third bar of the hamburger changes direction*!*/
-/*#menuToggle input:checked ~ span:nth-last-child(2)*/
-/*{*/
-    /*transform: rotate(-45deg) translate(0, -1px);*/
-/*}*/
+/* The second bar of the hamburger is hidden.*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+/* The third bar of the hamburger changes direction*/
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(0, -1px);
+}
 
 /* Make this absolute positioned at the top left of the screen*/
 #menu
@@ -127,7 +129,7 @@ a:hover
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    /*transform: translate(-100%, 0);*/
+    transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     letter-spacing: 2.5px;
 }

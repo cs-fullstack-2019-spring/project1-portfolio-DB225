@@ -173,3 +173,11 @@ nav{
     grid-row: 1/12;
     position: fixed;
 }
+
+ol li{
+    list-style-type: none;
+    font-size: 100px;
+    display: inline;
+}
+
+
