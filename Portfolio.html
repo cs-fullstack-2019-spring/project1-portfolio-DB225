@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="Portfolio.css">
-
+    <script src="jquery-3.3.1.js"></script>
 </head>
 <body>
-<h3>Home</h3>
-
-<div>
-<ul>
-    <li><a href="Portfolio.html">Didier Bonga</a></li>
-    <li><a href="AboutMe.html">About me</a></li>
-    <li><a href="Skills.html">Skills</a></li>
-    <li><a href="ShowOffProjects.html">Show of projects</a></li>
-    <li><a href="Education.html">Education</a></li>
-    <li><a href="Resume.html">Resume</a></li>
-    <li><a href="Contact.html">Contact</a></li>
-    <li><a href="WeeklyReflections.html">Weekly reflections</a></li>
-</ul>
+<div class="container">
+<nav role="navigation">
+    <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span> <!--The first bar of the hamburger-->
+        <span></span> <!--The second bar of the hamburger-->
+        <span></span> <!--The third bar of the hamburger-->
+        <ul id="menu">
+            <li><a href="" class="onPage">Home</a></li>
+            <li><a href="AboutMe.html">About me</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="ShowOffProjects.html">Show of projects</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="WeeklyReflections.html">Weekly reflections</a></li>
+        </ul>
+    </div>
+</nav>
+<header>
+    <h1>WELCOME TO MY PORTFOLIO</h1>
+</header>
+<section>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+</section>
+<footer>
+    <p>copyright &copy; Didier Bonga</p>
+    <p>Memphis 2019 &trade;</p>
+</footer>
 </div>
-
-
-<script src="Portfolio.js"></script>
+<script src="jsForAllPages.js"></script>
 </body>
 </html>
