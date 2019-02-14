@@ -5,6 +5,19 @@ body
     font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
+h1{
+    /*text-align: center;*/
+    position: relative;
+    top: 100px;
+    left: 300px;
+    display: inline-block;
+}
+
+
+/*************************************************************************************************************/
+/*******************************************NAVBAR BAR********************************************************/
+/*************************************************************************************************************/
+
 /*The position of the links on the navbar*/
 a
 {
@@ -134,6 +147,25 @@ a:hover
     transform: none;
 }
 
+/*When we click on the navbar link, the size of the link changes*/
+.onPage{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+/*When we scroll on the pages, the navbar is fixed*/
+nav{
+    grid-column: 1;
+    grid-row: 1/12;
+    position: fixed;
+}
+
+
+/*****************************************************************************************************/
+/**********************POSITIONING OF THE ELEMENTS OF THE PAGE****************************************/
+/*****************************************************************************************************/
+
 /*position of each element on the page*/
 .container{
     display: grid;
@@ -149,7 +181,7 @@ section{
     grid-column: 2/7;
     grid-row: 2/10;
     padding-top: 10px;
-    padding-bottom: 390px;
+    padding-bottom: 500px;
 }
 
 footer{
@@ -160,16 +192,3 @@ footer{
 }
 
 
-/*When we click on the navbar link, the size of the link changes*/
-.onPage{
-    font-size: 30px;
-    color: white;
-    font-weight: bold;
-}
-
-/*When we scroll on the pages, the navbar is fixed*/
-nav{
-    grid-column: 1;
-    grid-row: 1/12;
-    position: fixed;
-}

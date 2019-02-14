@@ -5,6 +5,11 @@ body
     font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
+
+/*************************************************************************************************************/
+/*******************************************NAVBAR BAR********************************************************/
+/*************************************************************************************************************/
+
 /*The position of the links on the navbar*/
 a
 {
@@ -134,31 +139,6 @@ a:hover
     transform: none;
 }
 
-/*position of each element on the page*/
-.container{
-    display: grid;
-    grid-template-columns:repeat(6,1fr);
-}
-
-header{
-    grid-column: 2/7;
-    grid-row: 1/2;
-}
-
-section{
-    grid-column: 2/7;
-    grid-row: 2/10;
-    padding-top: 10px;
-    padding-bottom: 390px;
-}
-
-footer{
-    grid-column: 1/7;
-    grid-row: 12;
-    text-align: center;
-    border-top: 1px solid black;
-}
-
 
 /*When we click on the navbar link, the size of the link changes*/
 .onPage{
@@ -172,4 +152,61 @@ nav{
     grid-column: 1;
     grid-row: 1/12;
     position: fixed;
+}
+
+/*****************************************************************************************************/
+/**********************POSITIONING OF THE ELEMENTS OF THE PAGE****************************************/
+/*****************************************************************************************************/
+
+/*position of each element on the page*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    position: relative;
+}
+
+header{
+    grid-column: 2;
+    grid-row: 1/2;
+}
+
+section{
+    grid-column: 3/5;
+    grid-row: 1/4;
+}
+
+footer{
+    grid-column: 1/5;
+    grid-row: 12;
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+header, section{
+    padding-top: 10px;
+    padding-bottom: 180px;
+    padding-left: 15px;
+}
+
+/*size of the address*/
+address{
+    font-size: large;
+}
+
+
+.mailClick:hover{
+    font-weight: bold;
+    color: black;
+}
+
+/*style for every input*/
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
