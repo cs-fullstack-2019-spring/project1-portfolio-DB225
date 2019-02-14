@@ -5,6 +5,11 @@ body
     font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
+
+/*************************************************************************************************************/
+/*******************************************NAVBAR BAR********************************************************/
+/*************************************************************************************************************/
+
 /*The position of the links on the navbar*/
 a
 {
@@ -134,6 +139,26 @@ a:hover
     transform: none;
 }
 
+
+/*When we click on the navbar link, the size of the link changes*/
+.onPage{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+/*When we scroll on the pages, the navbar is fixed*/
+nav{
+    grid-column: 1;
+    grid-row: 1/12;
+    position: fixed;
+}
+
+
+/*****************************************************************************************************/
+/**********************POSITIONING OF THE ELEMENTS OF THE PAGE****************************************/
+/*****************************************************************************************************/
+
 /*position of each element on the page*/
 .container{
     display: grid;
@@ -160,16 +185,7 @@ footer{
 }
 
 
-/*When we click on the navbar link, the size of the link changes*/
-.onPage{
-    font-size: 30px;
-    color: white;
+.linkHover:hover{
+    color: navy;
     font-weight: bold;
-}
-
-/*When we scroll on the pages, the navbar is fixed*/
-nav{
-    grid-column: 1;
-    grid-row: 1/12;
-    position: fixed;
 }

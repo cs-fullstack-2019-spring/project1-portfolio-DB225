@@ -155,7 +155,7 @@ nav{
 }
 
 /*****************************************************************************************************/
-/**********************POSITIONING OF THE ELEMENTS OF THE PAGE****************************************/
+/**********************POSITIONING AND STYLE OF THE ELEMENTS OF THE PAGE****************************************/
 /*****************************************************************************************************/
 
 /*position of each element on the page*/
@@ -193,7 +193,8 @@ address{
     font-size: large;
 }
 
-
+/*When the mouse hover the email, the color black because the <a> tag*/
+/*of the navbar changes his color to white when the mouse hover.*/
 .mailClick:hover{
     font-weight: bold;
     color: black;
@@ -209,4 +210,13 @@ input[type=text],input[type=email], textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+}
+
+button{
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.54);
+    padding: 10px;
+    background-color: gray;
+    font-weight: bold;
+    cursor: pointer;
 }

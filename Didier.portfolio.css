@@ -5,14 +5,6 @@ body
     font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-h1{
-    /*text-align: center;*/
-    position: relative;
-    top: 100px;
-    left: 300px;
-    display: inline-block;
-}
-
 
 /*************************************************************************************************************/
 /*******************************************NAVBAR BAR********************************************************/
@@ -166,29 +158,52 @@ nav{
 /**********************POSITIONING OF THE ELEMENTS OF THE PAGE****************************************/
 /*****************************************************************************************************/
 
+h1{
+    /*text-align: center;*/
+    position: relative;
+    top: 140px;
+    left: 300px;
+    display: inline-block;
+    font-size: 50px;
+}
+
+
+.PtagFromHeader1, .PtagFromheader2{
+    position: relative;
+    top: 160px;
+    text-align: center;
+    font-size: 20px;
+}
+
 /*position of each element on the page*/
 .container{
     display: grid;
     grid-template-columns:repeat(6,1fr);
+
 }
 
+/*HEADER position*/
 header{
     grid-column: 2/7;
     grid-row: 1/2;
+    border: 1px solid black;
 }
 
+/*MAIN CONTENT position*/
 section{
     grid-column: 2/7;
     grid-row: 2/10;
     padding-top: 10px;
-    padding-bottom: 500px;
+    padding-bottom: 390px;
+    border: 1px solid black;
 }
 
+/*FOOTER position*/
 footer{
     grid-column: 1/7;
     grid-row: 12;
     text-align: center;
     border-top: 1px solid black;
+    border: 1px solid black;
 }
-
 
