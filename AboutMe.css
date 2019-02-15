@@ -34,7 +34,7 @@ a:hover
     display: block;
     position: relative;
     top: 50px;
-    left: 20px;
+    left: 39px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -164,7 +164,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     position: relative;
-
+    grid-gap: 10px;
 }
 
 header{
@@ -195,6 +195,12 @@ footer{
     border-top: 1px solid black;
 }
 
-header, section, aside, footer{
-    border: 1px solid rgba(86, 81, 255, 0.32);
+header, aside{
+    background: rgba(86, 81, 255, 0.1);
+    border-radius: 10px;
+}
+
+header, section, aside{
+    position: relative;
+    right: 0.4%;
 }

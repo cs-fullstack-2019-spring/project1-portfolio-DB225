@@ -183,14 +183,9 @@ footer{
 }
 
 header, section{
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 180px;
-    padding-left: 15px;
-}
-
-/*size of the address*/
-address{
-    font-size: large;
+    padding-left: 31px;
 }
 
 /*When the mouse hover the email, the color black because the <a> tag*/
@@ -201,24 +196,24 @@ address{
 }
 
 /***********************************************NOT USABLE********************************************************/
-/*style for every input*/
-input[type=text],input[type=email], textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
+/*!*style for every input*!*/
+/*input[type=text],input[type=email], textarea {*/
+    /*width: 100%;*/
+    /*padding: 10px;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 4px;*/
+    /*box-sizing: border-box;*/
+    /*margin-top: 6px;*/
+    /*margin-bottom: 16px;*/
+    /*resize: vertical;*/
+/*}*/
 
-input[type=submit]{
-    border-radius: 10px;
-    width: 110px;
-    height: 30px;
-    cursor: pointer;
-}
+/*input[type=submit]{*/
+    /*border-radius: 10px;*/
+    /*width: 110px;*/
+    /*height: 30px;*/
+    /*cursor: pointer;*/
+/*}*/
 /****************************************************************************************************************/
 
 iframe{

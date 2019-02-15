@@ -181,4 +181,7 @@ footer{
     border-top: 1px solid black;
 }
 
-
+header,section{
+    position: relative;
+    left: 2.1%;
+}

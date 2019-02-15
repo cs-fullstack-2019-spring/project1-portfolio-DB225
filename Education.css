@@ -161,6 +161,7 @@ nav{
 .container{
     display: grid;
     grid-template-columns: repeat(4, 2fr);
+    grid-gap: 10px;
 }
 
 /*HEADER position*/
@@ -171,24 +172,25 @@ header{
 
 /*MAIN CONTENT position*/
 section{
-    grid-column: 2/3;
-    grid-row: 2/10;
-    padding-top: 10px;
-    padding-bottom: 415px;
+    grid-column: 2/7;
+    grid-row: 2/3;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 article{
-    grid-column: 3/4;
-    grid-row: 2/10;
-    padding-top: 10px;
-    padding-bottom: 415px;
+    grid-column: 2/7;
+    grid-row: 3/4;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 aside{
-    grid-column: 4/5;
-    grid-row: 2/10;
-    padding-top: 10px;
-    padding-bottom: 415px;
+    grid-column: 2/7;
+    grid-row: 4/5;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 /*FOOTER position*/
@@ -201,7 +203,7 @@ footer{
 
 header,section,article,aside{
     position: relative;
-    right:7%;
+    right:6.5%;
 }
 
 #rudn{
@@ -213,3 +215,4 @@ header,section,article,aside{
     position: relative;
     left: 10%;
 }
+

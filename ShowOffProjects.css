@@ -162,11 +162,11 @@ nav{
 /*position of each element on the page*/
 .container{
     display: grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(3,1fr);
 }
 
 header{
-    grid-column: 2/6;
+    grid-column: 2/4;
     grid-row: 1/2;
 }
 
@@ -182,6 +182,7 @@ aside{
     grid-row: 2/10;
     padding-top: 10px;
     padding-bottom: 390px;
+    padding-left: 20%;
 }
 
 footer{
@@ -189,6 +190,11 @@ footer{
     grid-row: 12;
     text-align: center;
     border-top: 1px solid black;
+}
+
+header,section,aside{
+    position: relative;
+    right: 14.5%;
 }
 
 

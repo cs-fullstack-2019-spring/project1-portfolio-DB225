@@ -192,19 +192,19 @@ footer{
     font-weight: bold;
 }
 
-
-button{
-    border-radius: 10px;
-    font-family: 'Comfortaa', cursive;
-    list-style-type: none;
-    margin: 25px;
-}
-
 .positionLinks div{
     display: inline-block;
 }
 
 img{
-    border: 1px solid black;
+    border: 1.5px solid gray;
     border-radius: 10px;
+}
+
+div p{
+    text-align: center;
+}
+
+#firstP{
+    text-align: left;
 }
