@@ -3,6 +3,7 @@ body
     margin: 1.5px 15px;
     padding: 0;
     font-family: "Avenir Next", "Avenir", sans-serif;
+
 }
 
 
@@ -186,7 +187,10 @@ h1{
 header{
     grid-column: 2/7;
     grid-row: 1/2;
-    border: 1px solid black;
+    position: relative;
+    right: 5%;
+    font-family: 'Slabo 13px', serif;
+    word-spacing: 10px;
 }
 
 /*MAIN CONTENT position*/
@@ -195,7 +199,12 @@ section{
     grid-row: 2/10;
     padding-top: 10px;
     padding-bottom: 390px;
-    border: 1px solid black;
+}
+
+section p{
+    position: relative;
+    text-align: center;
+    top: 120px;
 }
 
 /*FOOTER position*/
@@ -204,6 +213,5 @@ footer{
     grid-row: 12;
     text-align: center;
     border-top: 1px solid black;
-    border: 1px solid black;
 }
 

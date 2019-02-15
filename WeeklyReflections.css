@@ -167,6 +167,8 @@ nav{
 header{
     grid-column: 2/7;
     grid-row: 1/2;
+    position: relative;
+    left: 2%;
 }
 
 section{
@@ -174,6 +176,8 @@ section{
     grid-row: 2/10;
     padding-top: 10px;
     padding-bottom: 390px;
+    position: relative;
+    left: 2%;
 }
 
 footer{
@@ -184,11 +188,23 @@ footer{
 }
 
 .codeJourneyList:hover{
-    color: navy;
+    color: black;
     font-weight: bold;
 }
 
-ol li{
+
+button{
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
     list-style-type: none;
     margin: 25px;
+}
+
+.positionLinks div{
+    display: inline-block;
+}
+
+img{
+    border: 1px solid black;
+    border-radius: 10px;
 }
