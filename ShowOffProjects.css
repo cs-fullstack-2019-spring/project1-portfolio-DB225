@@ -2,7 +2,7 @@ body
 {
     margin: 1.5px 15px;
     padding: 0;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    background: url("AllPagesBckgrd.png") no-repeat;
 }
 
 
@@ -113,11 +113,12 @@ a:hover
 #menu
 {
     position: absolute;
+    border-radius: 0 60px 60px 0;
     width: 194px;
     margin: -100px 0 0 -50px;
     padding: 35px;
     padding-top: 125px;
-    background: blue;
+    background: rgba(0, 0, 72, 0.96);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -156,35 +157,39 @@ nav{
 
 
 /*****************************************************************************************************/
-/**********************POSITIONING OF THE ELEMENTS OF THE PAGE****************************************/
+/**********************LAYOUT OF THE ELEMENTS OF THE PAGE*********************************************/
 /*****************************************************************************************************/
 
-/*position of each element on the page*/
+/*Layout of the page*/
 .container{
     display: grid;
     grid-template-columns:repeat(3,1fr);
 }
 
+/*The section with the title and the text*/
 header{
     grid-column: 2/4;
     grid-row: 1/2;
 }
 
+/*The section with the clickable logo of the "LOADING DESIGN" project and his github link*/
 section{
     grid-column: 2/3;
     grid-row: 2/10;
     padding-top: 10px;
-    padding-bottom: 390px;
+    padding-bottom: 200px;
 }
 
+/*The section with the clickable logo of the "INTERACTIVE MAP" project and his github link*/
 aside{
     grid-column: 3/4;
     grid-row: 2/10;
     padding-top: 10px;
-    padding-bottom: 390px;
+    padding-bottom: 250px;
     padding-left: 20%;
 }
 
+/*FOOTER position*/
 footer{
     grid-column: 1/6;
     grid-row: 12;
@@ -192,13 +197,53 @@ footer{
     border-top: 1px solid black;
 }
 
+/*Position between each area and the navbar*/
 header,section,aside{
     position: relative;
     right: 14.5%;
 }
 
-
+/*Style when we hover the github link*/
 .linkHover:hover{
     color: navy;
     font-weight: bold;
+}
+
+/*We remove the list item marker from the project logo*/
+section ul li:nth-child(1), section ul li:nth-child(2), aside ul li:nth-child(1), aside ul li:nth-child(2){
+    list-style-type: none;
+    position: relative;
+    right: 4%;
+}
+
+/*Style for the arrows*/
+span {
+    content: "\21B4";
+    position: relative;
+    left: 40%;
+    font-size: 50px;
+}
+
+/*Position of the LOADING project text "Why this project" */
+.textLoading{
+    position: relative;
+    top: 1%;
+}
+
+
+/*******Style for the marker of the github links******/
+/*Project1*/
+.styleMarker1{
+    position: relative;
+    top: 25%;
+    list-style-type: square;
+    right: 5%;
+}
+
+/*Project2*/
+.styleMarker2{
+    position: relative;
+    top: 22.5%;
+    right: 5%;
+    list-style-type: square;
 }

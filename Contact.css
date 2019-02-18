@@ -3,6 +3,7 @@ body
     margin: 1.5px 15px;
     padding: 0;
     font-family: "Avenir Next", "Avenir", sans-serif;
+    background: url("AllPagesBckgrd.png") no-repeat;
 }
 
 
@@ -113,11 +114,12 @@ a:hover
 #menu
 {
     position: absolute;
+    border-radius: 0 60px 60px 0;
     width: 194px;
     margin: -100px 0 0 -50px;
     padding: 35px;
     padding-top: 125px;
-    background: blue;
+    background: rgba(0, 0, 72, 0.96);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -155,26 +157,29 @@ nav{
 }
 
 /*****************************************************************************************************/
-/**********************POSITIONING AND STYLE OF THE ELEMENTS OF THE PAGE****************************************/
+/**********************LAYOUT OF THE ELEMENTS OF THE PAGE*********************************************/
 /*****************************************************************************************************/
 
-/*position of each element on the page*/
+/*Layout of the page*/
 .container{
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
     position: relative;
 }
 
+/*The section with the title and the social media icons*/
 header{
     grid-column: 2;
     grid-row: 1/2;
 }
 
+/*The section with the form*/
 section{
     grid-column: 3/5;
     grid-row: 1/4;
 }
 
+/*FOOTER position*/
 footer{
     grid-column: 1/5;
     grid-row: 12;
@@ -182,6 +187,7 @@ footer{
     border-top: 1px solid black;
 }
 
+/*Position between the sections and the navbar*/
 header, section{
     padding-top: 5px;
     padding-bottom: 180px;
@@ -216,7 +222,32 @@ header, section{
 /*}*/
 /****************************************************************************************************************/
 
+
+/*Size of the form */
 iframe{
-    height: 700px;
+    height: 430px;
     width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+/*************************Style for the social media icons********************/
+
+ol li{
+    line-height: 90px;
+    list-style-type: none;
+    position: relative;
+    right: 15%;
+}
+
+ol li a{
+    font-size: 40px;
+    padding: 5%;
+    color: #474747;
+}
+
+ol li a:hover{
+    font-style: normal;
+    color: black;
 }

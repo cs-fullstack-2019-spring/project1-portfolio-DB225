@@ -3,6 +3,7 @@ body
     margin: 1.5px 15px;
     padding: 0;
     font-family: "Avenir Next", "Avenir", sans-serif;
+    background: url("AllPagesBckgrd.png") no-repeat;
 }
 
 /*************************************************************************************************************/
@@ -112,11 +113,12 @@ a:hover
 #menu
 {
     position: absolute;
+    border-radius: 0 60px 60px 0;
     width: 194px;
     margin: -100px 0 0 -50px;
     padding: 35px;
     padding-top: 125px;
-    background: blue;
+    background: rgba(0, 0, 72, 0.96);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -153,20 +155,22 @@ nav{
 }
 
 /*****************************************************************************************************/
-/**********************POSITIONING OF THE ELEMENTS OF THE PAGE****************************************/
+/*****************************LAYOUT OF THE ELEMENTS OF THE PAGE**************************************/
 /*****************************************************************************************************/
 
-/*position of each element on the page*/
+/*Layout of the page*/
 .container{
     display: grid;
     grid-template-columns:repeat(6,1fr);
 }
 
+/*The section with the title and the sentences*/
 header{
     grid-column: 2/7;
     grid-row: 1/2;
 }
 
+/*The section with the pdf*/
 section{
     grid-column: 2/7;
     grid-row: 2/10;
@@ -174,6 +178,7 @@ section{
     padding-bottom: 200px;
 }
 
+/*FOOTER position*/
 footer{
     grid-column: 1/7;
     grid-row: 12;
@@ -181,6 +186,7 @@ footer{
     border-top: 1px solid black;
 }
 
+/*The margin between the sections and the navbar*/
 header,section{
     position: relative;
     left: 2.1%;

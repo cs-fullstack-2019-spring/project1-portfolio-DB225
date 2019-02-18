@@ -3,6 +3,7 @@ body
     margin: 1.5px 15px;
     padding: 0;
     font-family: "Avenir Next", "Avenir", sans-serif;
+    background: url("AllPagesBckgrd.png") no-repeat;
 }
 
 /*************************************************************************************************************/
@@ -112,11 +113,12 @@ a:hover
 #menu
 {
     position: absolute;
+    border-radius: 0 60px 60px 0;
     width: 194px;
     margin: -100px 0 0 -50px;
     padding: 35px;
     padding-top: 125px;
-    background: blue;
+    background: rgba(0, 0, 72, 0.96);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -160,15 +162,16 @@ ol li{
 
 
 /*****************************************************************************************************/
-/**********************POSITIONING OF THE ELEMENTS OF THE PAGE****************************************/
+/**********************LAYOUT OF THE ELEMENTS OF THE PAGE*********************************************/
 /*****************************************************************************************************/
 
-/*position of each element on the page*/
+/*Layout of all the section*/
 .container{
     display: grid;
     grid-template-columns:repeat(6,1fr);
 }
 
+/*The section with the title and the text*/
 header{
     grid-column: 2/7;
     grid-row: 1/2;
@@ -176,6 +179,7 @@ header{
     left: 2%;
 }
 
+/*The section with the logos*/
 section{
     grid-column: 2/7;
     grid-row: 2/10;
@@ -183,6 +187,7 @@ section{
     padding-bottom: 490px;
 }
 
+/*FOOTER position*/
 footer{
     grid-column: 1/7;
     grid-row: 12;
@@ -190,9 +195,17 @@ footer{
     border-top: 1px solid black;
 }
 
+/*******************************STYLE FOR EACH LOGO**********************************/
 
-/*STYLE FOR EACH LINK*/
+/*Style for the text that appears when the mouse hovers over the logos*/
+#level{
+    left: 2.5%;
+    top: 45%;
+    position: relative;
+    border-radius: 10px;
+}
 
+/*The position of all the logos in relation to the page*/
 ol
 {
     position: absolute;
@@ -204,12 +217,14 @@ ol
     display: flex;
 }
 
+/*The position of the logos in relation to themselves*/
 ol li
 {
     list-style: none;
     margin: 0 40px;
 }
 
+/*Style for the symbols*/
 ol li a .fab
 {
     font-size: 50px;
@@ -218,6 +233,7 @@ ol li a .fab
     transform: .5s;
 }
 
+/*Style for the main side of the logo,where the symbol is placed*/
 ol li a
 {
     position: relative;
@@ -230,6 +246,7 @@ ol li a
     box-shadow: -20px 20px 10px RGBa(0,0,0,.5);
 }
 
+/*The long and visible side of the logo*/
 ol li a:before
 {
     content:'';
@@ -243,6 +260,7 @@ ol li a:before
     transform: rotate(0deg) skewY(-45deg);
 }
 
+/*The short and visible side of the logo*/
 ol li a:after
 {
     content:'';
@@ -256,41 +274,26 @@ ol li a:after
     transform: rotate(0deg) skewX(-45deg);
 }
 
-/*The logo become white when we hover him*/
+/*The logos become white when we hover him*/
 ol li:hover .fab
 {
     color: #FFF;
 }
 
-/*The logo of linux become beige when we hover him*/
-ol li:hover #linux{
-    color: burlywood;
-}
-
-/*The logo of JS stay black when we hover him*/
-ol li:hover #js{
-    color: #232323;
-}
-
-/*The logo of python become blue when we hover him*/
-ol li:hover #python{
-    color: rgb(220, 220, 0);
-}
-
-
+/*Once the logos goes up, a shadow is created at the bottom*/
 ol li a:hover
 {
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
     box-shadow: -50px 50px 50px RGBa(0,0,0,.7);
 }
 
-/*Initial statement of HTML logo*/
+/*Initial statement of the HTML logo*/
 ol li:nth-child(1) a
 {
     background: #FFF;
 }
 
-/*When the HTML logo change */
+/*When we hover the HTML logo*/
 ol li:nth-child(1) a:hover
 {
     background: orangered;
@@ -305,15 +308,15 @@ ol li:nth-child(1) a:hover::after
 {
     background: orangered;
 }
+/*********************************************/
 
-
-/*Initial statement of CSS logo*/
+/*Initial statement of the CSS logo*/
 ol li:nth-child(2) a
 {
     background: #FFF;
 }
 
-/*When the HTML logo change */
+/*When we hover the CSS logo*/
 ol li:nth-child(2) a:hover
 {
     background: steelblue;
@@ -328,14 +331,15 @@ ol li:nth-child(2) a:hover::after
 {
     background: steelblue;
 }
+/*********************************************/
 
-/*Initial statement of JS logo*/
+/*Initial statement of the JS logo*/
 ol li:nth-child(3) a
 {
     background: #FFF;
 }
 
-/*When the JS logo change */
+/*When we hover the JS logo*/
 ol li:nth-child(3) a:hover
 {
     background: yellow;
@@ -351,13 +355,19 @@ ol li:nth-child(3) a:hover::after
     background: yellow;
 }
 
-/*Initial statement of Github logo*/
+/*The symbol of JS stay black when we hover him*/
+ol li:hover #js{
+    color: #232323;
+}
+/*********************************************/
+
+/*Initial statement of the Github logo*/
 ol li:nth-child(4) a
 {
     background: #FFF;
 }
 
-/*When the Github logo change*/
+/*When we hover the Github logo*/
 ol li:nth-child(4) a:hover
 {
     background: black;
@@ -372,14 +382,15 @@ ol li:nth-child(4) a:hover::after
 {
     background: black;
 }
+/*********************************************/
 
-/*Initial statement of linux logo*/
+/*Initial statement of the linux logo*/
 ol li:nth-child(5) a
 {
     background: #FFF;
 }
 
-/*When the linux logo change*/
+/*When we hover the linux logo*/
 ol li:nth-child(5) a:hover
 {
     background: #262626;
@@ -395,14 +406,19 @@ ol li:nth-child(5) a:hover::after
     background: #232323;
 }
 
+/*The symbol of linux become beige when we hover him*/
+ol li:hover #linux{
+    color: burlywood;
+}
+/*********************************************/
 
-/*Initial statement of python logo*/
+/*Initial statement of the python logo*/
 ol li:nth-child(6) a
 {
     background: #FFF;
 }
 
-/*When the python logo change*/
+/*When we hover the python logo*/
 ol li:nth-child(6) a:hover
 {
     background: navy;
@@ -416,6 +432,11 @@ ol li:nth-child(6) a:hover::before
 ol li:nth-child(6) a:hover::after
 {
     background: navy;
+}
+
+/*The symbol of python become yellow when we hover him*/
+ol li:hover #python{
+    color: rgb(220, 220, 0);
 }
 
 
