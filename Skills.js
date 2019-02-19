@@ -4,7 +4,7 @@
 $(document).ready(function(){
     // Text for HTML5
     $("ol li:nth-child(1)").hover(function(){
-            $("#level").text("HTML5 : Advanced")
+            $("#level").text("HTML5 : Intermediate")
            .css("fontSize","20px").css("display","inline-block")
         },
         function(){
@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     //Text for CSS3
     $("ol li:nth-child(2)").hover(function(){
-            $("#level").text("CSS3 : Advanced");
+            $("#level").text("CSS3 : Intermediate");
         },
         function(){
             $("#level").text("");

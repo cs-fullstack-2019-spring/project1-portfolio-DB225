@@ -1,0 +1,233 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #FFF;
+    text-align: center;
+}
+
+/*The section of the first loading design*/
+.section
+{
+    background-color: #228B22;
+    height: 500px;
+    line-height: 500px;
+}
+
+/*The section of the second loading design*/
+.section-2
+{
+    background-color: #008080;
+}
+
+/*The section of the third loading design*/
+.section-3
+{
+    background-color: #DC143C;
+}
+
+/*The section of the fourth loading design*/
+.section-4
+{
+    background-color: #000;
+}
+
+/*The position of the loading design*/
+.loader
+{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+/*------------------------------------*\
+   FIRST DESIGN : loading quarter circle
+\*------------------------------------*/
+
+.loader-quart
+{
+    border-radius: 50px;
+    border: 6px solid RGBa(255,255,255,0.4);
+}
+
+.loader-quart:after
+{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FFF;
+    animation: spin 1s linear infinite;
+}
+
+
+/*------------------------------------*\
+  SECOND DESIGN : loading double circle
+\*------------------------------------*/
+.loader-double
+{
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FFF;
+    border-bottom-color: #FFF;
+    animation: spin 1s linear infinite;
+}
+
+.loader-double:after
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FFF;
+    border-bottom-color: #FFF;
+    opacity: 0.6;
+    animation: spinreverse 2s linear infinite;
+}
+
+.loader-double:before
+{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    border-top-color: #FFF;
+    border-bottom-color: #FFF;
+    opacity: 0.6;
+    animation: spinreverse 2.5s linear infinite;
+}
+
+/*----------------------------------------*\
+   THIRD DESIGN : loading multiple circles
+\*----------------------------------------*/
+.loader-circles
+{
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    animation: spin 1s linear infinite;
+}
+
+.loader-circles:after
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    opacity: 0.8;
+    animation: spin 5s linear infinite;
+}
+
+.loader-circles:before
+{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    border-top-color: #FFF;
+    opacity: 0.5;
+    animation: spin 10s linear infinite;
+}
+
+/*-----------------------------*\
+   FOURTH DESIGN : loading bars
+\*-----------------------------*/
+.loader-bars:before
+{
+    content:'';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    background-color: #FFF;
+    animation: grow 1s linear infinite;
+}
+
+.loader-bars:after
+{
+    content:'';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    background-color: #FFF;
+    animation: grow 1s linear -.66s infinite;
+}
+
+.loader-bars span
+{
+    content:'';
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 10px;
+    height: 30px;
+    background-color: #FFF;
+    animation: grow 1.5s linear -1.5s infinite;
+}
+
+/*Animation of the loading design*/
+@keyframes grow
+{
+    0%{transform: scaleY(0); opacity:0;}
+    50%{transform: scaleY(1); opacity:1;}
+    100%{transform: scaleY(0); opacity:0;}
+}
+
+@keyframes spin
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes spinreverse
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
